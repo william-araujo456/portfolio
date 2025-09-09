@@ -52,8 +52,6 @@ h2 {
     margin-bottom: 1rem;
 }
 
-/* Área de habilidades */
-
 .habilidades {
     display: flex;
     flex-wrap: wrap;
@@ -62,7 +60,6 @@ h2 {
 }
 
 .skill {
-    background-color: #ffffff;
     width: 280px;
     min-height: 340px;
     padding: 1rem;
@@ -73,76 +70,7 @@ h2 {
 }
 
 .skill img {
-    width: 50%;
-    max-width: 50%;
-    height: auto;
-    aspect-ratio: 512 / 512;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 0.5rem;
-}
-
-/* Área de projetos */
-
-.projetos {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    justify-content: center;
-}
-
-.projeto {
-    background-color: #ffffff;
-    width: 280px;
-    min-height: 340px;
-    padding: 1rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.projeto img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    aspect-ratio: 750 / 444;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 0.5rem;
-}
-
-.projeto h3 {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-}
-
-.projeto p {
-    flex-grow: 1;
-    font-size: 0.95rem;
-    margin-bottom: 1rem;
-    color: #555;
-}
-
-.projeto button {
-    background-color: #2192FF;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 6px;
-    color: #fff;
-    font-size: 0.95rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.projeto button:hover {
-    background-color: #186fce;
-}
-
-.contacts {
-    margin-top: 1rem;
+    width: 12%;
 }
 
 .contacts a {
