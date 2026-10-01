@@ -3,58 +3,270 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio | William Mattson</title>
+    <title>William Mattson | Desenvolvedor Mobile</title>
+    <meta name="description" content="Portfólio de William Mattson, desenvolvedor mobile e web, estudante de Tecnologia em Desenvolvimento Mobile na UNINTER e técnico em informática pelo SENAC.">
+    <meta name="author" content="William Mattson">
+    <meta name="theme-color" id="meta-tema" content="#0a4dd7">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="William Mattson | Desenvolvedor Mobile e Web">
+    <meta property="og:description" content="Aplicações para celular e navegador. Veja minhas habilidades e entre em contato.">
+    <meta property="og:locale" content="pt_BR">
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a4dd7'/%3E%3Ctext x='32' y='43' font-size='30' font-family='Arial' font-weight='700' text-anchor='middle' fill='%23ffc53d'%3EWM%3C/text%3E%3C/svg%3E">
+
+    <script>
+        /* Aplica o tema salvo (ou o do sistema) antes de a página aparecer, para não piscar */
+        (function () {
+            var tema = null;
+            try { tema = localStorage.getItem('tema'); } catch (e) {}
+            if (tema !== 'dark' && tema !== 'light') {
+                tema = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            }
+            document.documentElement.setAttribute('data-theme', tema);
+        })();
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/ac8bcd23fc.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-<header>
-    <h1>William Mattson</h1>
-    <p>Desenvolvedor Mobile e Web | Técnico em Informática</p>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="topo">
+    <div class="wrap topo__barra">
+        <a class="marca" href="#inicio">William Mattson</a>
+        <div class="topo__acoes">
+            <nav aria-label="Principal">
+                <a href="#sobre">Sobre</a>
+                <a href="#experiencia">Experiência</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#contato">Contato</a>
+            </nav>
+            <button class="tema" id="alternar-tema" type="button" aria-label="Tema escuro" aria-pressed="false" title="Alternar tema claro e escuro">
+                <svg class="tema__lua" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                <svg class="tema__sol" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+            </button>
+        </div>
+    </div>
 </header>
 
-<main class="container">
+<main id="conteudo">
 
-    <section id="sobre">
-        <h2>Sobre mim</h2>
-        <p>
-            Sou estudante de Tecnologia em Desenvolvimento Mobile na Universidade UNINTER com formação técnica em informática pelo SENAC. Estou em constante desenvolvimento, buscando aprimorar minhas habilidades técnicas e ampliar minha experiência prática em projetos desafiadores. Tenho interesse especial em desenvolvimento de aplicações móveis e web, e estou comprometido em contribuir com soluções eficientes e inovadoras, agregando valor às equipes e aos projetos dos quais participo.
-        </p>
-    </section>
+    <section class="hero" id="inicio">
+        <div class="wrap hero__grade">
+            <div class="hero__texto">
+                <h1>William Mattson</h1>
+                <p class="hero__cargo">Tecnólogo em Desenvolvimento Mobile e Técnico em Informática.</p>
+                <p class="hero__resumo">
+                    Tecnólogo em Desenvolvimento Mobile pela UNINTER e estudante de Ciência da Computação, com interesse em desenvolvimento de aplicações móveis e web e foco na criação de soluções funcionais, eficientes e inovadoras.
+                </p>
+                <div class="hero__acoes">
+                    <a class="botao botao--destaque" href="mailto:william.mattson@outlook.com.br"><i class="fa-solid fa-envelope"></i> Enviar e-mail</a>
+                    <a class="botao botao--contorno" href="https://github.com/Willhoooo" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Ver GitHub</a>
+                </div>
+            </div>
 
-    <section id="habilidades">
-        <h2>Habilidades</h2>
-
-        <div class="habilidades">
-            <div class="skill">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="html5"  />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css3"  />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript"  />
-                <img src="https://raw.githubusercontent.com/vscode-icons/vscode-icons/master/icons/file_type_angular.svg" height="40" alt="angular"  />
-                <img src="https://raw.githubusercontent.com/vscode-icons/vscode-icons/master/icons/file_type_python.svg" height="40" alt="python"  />
-                <img src="https://raw.githubusercontent.com/vscode-icons/vscode-icons/master/icons/file_type_django.svg" height="40" alt="django"  />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" height="40" alt="kotlin"  />
+            <!-- Ilustração decorativa: janela de navegador (web) + celular (mobile) -->
+            <div class="aparelhos" aria-hidden="true">
+                <div class="navegador">
+                    <div class="navegador__barra"><span></span><span></span><span></span></div>
+                    <div class="navegador__corpo">
+                        <i></i><i></i><i></i><i></i><i></i><i></i>
+                    </div>
+                </div>
+                <div class="celular">
+                    <div class="celular__tela">
+                        <b></b><i></i><i></i><i></i>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="contato">
-        <h2>Contato</h2>
-        <p>Me envie uma mensagem!</p>
+    <section class="secao" id="sobre" aria-labelledby="titulo-sobre">
+        <div class="wrap">
+            <h2 id="titulo-sobre">Sobre mim</h2>
+            <div class="sobre__grade">
+                <div class="texto">
+                    <p>
+                        Sou Tecnólogo em Desenvolvimento Mobile pela UNINTER, Técnico em Informática formado pelo SENAC e atualmente estudante de Ciência da Computação. Estou em constante evolução profissional, buscando aprimorar meus conhecimentos técnicos e ampliar minha experiência prática no desenvolvimento de soluções tecnológicas.
+                    </p>
+                    <p>
+                        Tenho interesse especial em desenvolvimento de aplicações móveis e web, além de suporte e infraestrutura de TI. Busco contribuir com soluções eficientes, inovadoras e alinhadas às necessidades dos projetos, agregando valor às equipes por meio dos conhecimentos adquiridos na formação acadêmica e na experiência prática.
+                    </p>
+                </div>
 
-        <div class="contacts">
-            <a href="mailto:william.mattson@outlook.com.br"><i class="fa-solid fa-envelope"></i> Email</a>
-            <a href="https://www.linkedin.com/in/williammattson/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-            <a href="https://github.com/Willhoooo" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                <dl class="formacao">
+                    <div>
+                        <dt>Ciência da Computação</dt>
+                        <dd>UNINTER, em andamento</dd>
+                    </div>
+                    <div>
+                        <dt>Desenvolvimento Mobile</dt>
+                        <dd>UNINTER</dd>
+                    </div>
+                    <div>
+                        <dt>Técnico em Informática</dt>
+                        <dd>SENAC Amazonas</dd>
+                    </div>
+                    <div>
+                        <dt>Ensino Médio</dt>
+                        <dd>Centro Educacional Santa Teresinha</dd>
+                    </div>
+                </dl>
+            </div>
+        </div>
+    </section>
+
+    <section class="secao secao--papel" id="experiencia" aria-labelledby="titulo-experiencia">
+        <div class="wrap">
+            <h2 id="titulo-experiencia">Experiência profissional</h2>
+
+            <div class="experiencias">
+                <article class="experiencia">
+                    <h3>Suporte Técnico Júnior - N1</h3>
+                    <p class="experiencia__local">i_mais</p>
+                        <p class="experiencia__periodo">12/2025 a Atual</p>
+                        <ul class="experiencia__atividades">
+                            <li>Atuação no atendimento e suporte técnico ao cliente, com diagnóstico de problemas de conectividade e redes, configuração de equipamentos, suporte remoto e gestão de chamados. Desenvolvimento de automações para otimização dos processos de atendimento.</li>
+                        </ul>
+                </article>
+                <article class="experiencia">
+                    <h3>Estagiário de TI</h3>
+                    <p class="experiencia__local">Ministério da Defesa</p>
+                        <p class="experiencia__periodo">08/2024 a 08/2025</p>
+                        <ul class="experiencia__atividades">
+                            <li>Atuação em suporte técnico corporativo, com atendimento e resolução de chamados, montagem e manutenção de computadores, apoio à infraestrutura de eventos e à equipe de redes, além da gestão de ativos de TI.</li>
+                        </ul>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="secao" id="habilidades" aria-labelledby="titulo-habilidades">
+        <div class="wrap">
+            <h2 id="titulo-habilidades">Habilidades</h2>
+
+            <div class="grupos">
+                <article class="grupo">
+                    <h3>Front-end</h3>
+                    <ul>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="" width="40" height="40"><span>HTML</span></li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="" width="40" height="40"><span>CSS</span></li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="" width="40" height="40"><span>JavaScript</span></li>
+                        <li><img src="https://raw.githubusercontent.com/vscode-icons/vscode-icons/master/icons/file_type_angular.svg" alt="" width="40" height="40"><span>Angular</span></li>
+                    </ul>
+                </article>
+
+                <article class="grupo">
+                    <h3>Back-end</h3>
+                    <ul>
+                        <li><img src="https://raw.githubusercontent.com/vscode-icons/vscode-icons/master/icons/file_type_python.svg" alt="" width="40" height="40"><span>Python</span></li>
+                        <li><img src="https://raw.githubusercontent.com/vscode-icons/vscode-icons/master/icons/file_type_django.svg" alt="" width="40" height="40"><span>Django</span></li>
+                    </ul>
+                </article>
+
+                <article class="grupo">
+                    <h3>Mobile</h3>
+                    <ul>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="" width="40" height="40"><span>Kotlin</span></li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="" width="40" height="40"><span>Flutter</span></li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="secao secao--papel" id="projetos" aria-labelledby="titulo-projetos">
+        <div class="wrap">
+            <h2 id="titulo-projetos">Projetos</h2>
+
+            <div class="projetos">
+                <!--
+                    Modelo para adicionar um projeto. Copie, cole e preencha:
+
+                    <article class="projeto">
+                        <h3>Nome do projeto</h3>
+                        <p>Uma ou duas frases: o que ele faz e qual problema resolve.</p>
+                        <p class="projeto__tecnologias">HTML, CSS, JavaScript</p>
+                        <div class="projeto__links">
+                            <a href="URL-DO-REPOSITORIO" target="_blank" rel="noopener noreferrer">Código</a>
+                            <a href="URL-DO-SITE" target="_blank" rel="noopener noreferrer">Ver online</a>
+                        </div>
+                    </article>
+                -->
+
+                <article class="projeto projeto--github">
+                    <h3>Meus projetos estão no GitHub</h3>
+                    <p>Código, estudos e experimentos em web e mobile, sempre em evolução.</p>
+                    <div class="projeto__links">
+                        <a href="https://github.com/william-araujo456" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Abrir repositórios</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="secao secao--azul" id="contato" aria-labelledby="titulo-contato">
+        <div class="wrap">
+            <h2 id="titulo-contato">Vamos conversar?</h2>
+            <p class="contato__texto">Me envie uma mensagem! Respondo por e-mail ou pelo LinkedIn.</p>
+
+            <div class="contatos">
+                <a class="botao botao--destaque" href="mailto:william.mattson@outlook.com.br"><i class="fa-solid fa-envelope"></i> E-mail</a>
+                <a class="botao botao--contorno" href="https://www.linkedin.com/in/williammattson/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                <a class="botao botao--contorno" href="https://github.com/william-araujo456" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
         </div>
     </section>
 
 </main>
 
-<footer>
-    &copy; 2025 - William Mattson
+<footer class="rodape">
+    <div class="wrap">
+        &copy; <span id="ano">2026</span> William Mattson
+    </div>
 </footer>
+
+<script>
+    document.getElementById('ano').textContent = new Date().getFullYear();
+
+    (function () {
+        var raiz = document.documentElement;
+        var botao = document.getElementById('alternar-tema');
+        var metaTema = document.getElementById('meta-tema');
+        var cores = { light: '#0a4dd7', dark: '#0a3a9e' };
+
+        function aplicar(tema) {
+            raiz.setAttribute('data-theme', tema);
+            botao.setAttribute('aria-pressed', tema === 'dark' ? 'true' : 'false');
+            metaTema.setAttribute('content', cores[tema]);
+        }
+
+        function salvo() {
+            try { return localStorage.getItem('tema'); } catch (e) { return null; }
+        }
+
+        aplicar(raiz.getAttribute('data-theme'));
+
+        botao.addEventListener('click', function () {
+            var novo = raiz.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+            aplicar(novo);
+            try { localStorage.setItem('tema', novo); } catch (e) {}
+        });
+
+        /* Sem escolha salva, acompanha o tema do sistema */
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
+            if (!salvo()) aplicar(e.matches ? 'dark' : 'light');
+        });
+    })();
+</script>
 
 </body>
 </html>
