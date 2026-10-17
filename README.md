@@ -6,9 +6,9 @@ Meu portfólio pessoal, onde reúno minha formação, experiência profissional,
 
 ## O que tem no site
 
-- **Sobre mim:** Apresentação e formação Acadêmica
+- **Sobre mim:** Apresentação e formação acadêmica
 - **Experiência profissional:** Suporte técnico e estágio em TI
-- **Habilidades:** Tenologias organizadas em Front-end, Back-end e Mobile
+- **Habilidades:** Tecnologias organizadas em Front-end, Back-end e Mobile
 - **Projetos:** Destaques e link para o GitHub
 - **Contato:** e-mail, LinkedIn e GitHub
 - **Tema claro e escuro:** Segue o tema do sistema e guarda a escolha da pessoa
@@ -17,7 +17,7 @@ Meu portfólio pessoal, onde reúno minha formação, experiência profissional,
 
 - HTML5 semântico
 - CSS3 (variáveis, Grid, Flexbox, layout responsivo e tema escuro)
-- JavaScript puro (alternância de tema e ano do rodapé)
+- JavaScript puro, em arquivo separado (`script.js`): alternância de tema e ano do rodapé
 - Fontes: Bricolage Grotesque e Nunito (Google Fonts)
 - Ícones: Font Awesome, Devicon e vscode-icons
 
