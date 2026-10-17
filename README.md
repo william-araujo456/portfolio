@@ -24,5 +24,5 @@ Meu portfólio pessoal, onde reúno minha formação, experiência profissional,
 ## Contato
 
 - E-mail: william.mattson@outlook.com.br
-- [LinkedIn](https://www.linkedin.com/in/williammattson/)
-- [GitHub](https://github.com/william-araujo456)
+- LinkedIn: https://www.linkedin.com/in/williammattson/
+- GitHub: https://github.com/william-araujo456
