@@ -184,20 +184,6 @@
             <h2 id="titulo-projetos">Projetos</h2>
 
             <div class="projetos">
-                <!--
-                    Modelo para adicionar um projeto. Copie, cole e preencha:
-
-                    <article class="projeto">
-                        <h3>Nome do projeto</h3>
-                        <p>Uma ou duas frases: o que ele faz e qual problema resolve.</p>
-                        <p class="projeto__tecnologias">HTML, CSS, JavaScript</p>
-                        <div class="projeto__links">
-                            <a href="URL-DO-REPOSITORIO" target="_blank" rel="noopener noreferrer">Código</a>
-                            <a href="URL-DO-SITE" target="_blank" rel="noopener noreferrer">Ver online</a>
-                        </div>
-                    </article>
-                -->
-
                 <article class="projeto projeto--github">
                     <h3>Meus projetos estão no GitHub</h3>
                     <p>Código, estudos e experimentos em web e mobile, sempre em evolução.</p>
@@ -230,39 +216,7 @@
     </div>
 </footer>
 
-<script>
-    document.getElementById('ano').textContent = new Date().getFullYear();
-
-    (function () {
-        var raiz = document.documentElement;
-        var botao = document.getElementById('alternar-tema');
-        var metaTema = document.getElementById('meta-tema');
-        var cores = { light: '#0a4dd7', dark: '#0a3a9e' };
-
-        function aplicar(tema) {
-            raiz.setAttribute('data-theme', tema);
-            botao.setAttribute('aria-pressed', tema === 'dark' ? 'true' : 'false');
-            metaTema.setAttribute('content', cores[tema]);
-        }
-
-        function salvo() {
-            try { return localStorage.getItem('tema'); } catch (e) { return null; }
-        }
-
-        aplicar(raiz.getAttribute('data-theme'));
-
-        botao.addEventListener('click', function () {
-            var novo = raiz.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-            aplicar(novo);
-            try { localStorage.setItem('tema', novo); } catch (e) {}
-        });
-
-        /* Sem escolha salva, acompanha o tema do sistema */
-        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
-            if (!salvo()) aplicar(e.matches ? 'dark' : 'light');
-        });
-    })();
-</script>
+<script src="script.js" defer></script>
 
 </body>
 </html>
